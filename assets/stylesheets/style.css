@@ -1,4 +1,3 @@
-
 /* ======================================
  
     MediaQuery-Reporter Styles
@@ -39,4 +38,75 @@ body:after {
       content: "1024 and up";
       background-color: hsla(360,60%,40%,0.7);
   }
+}
+
+/* ======================================
+ 
+    Flex Container
+ 
+========================================= */
+
+.flex-container {
+  display: flex;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+/* ======================================
+ 
+    Grid Container
+ 
+========================================= */
+
+.grid-container {
+  display: grid;
+}
+
+.grid-center {
+  justify-items: center;
+}
+
+.auto-col {
+  grid-auto-flow: column;
+}
+
+.ggh {
+  grid-column-gap: 0.8125rem;
+}
+
+/* ======================================
+ 
+    Header
+ 
+========================================= */
+
+.header-bg-1 {
+  background-color: #131313;
+}
+
+.light-grey {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.header-bg-1 a {
+  text-decoration-line: none;
+}
+
+.header-bg-1 a:hover {
+  color: #ffffff;
+}
+
+.padding-1 {
+  padding: 0.60rem 1rem;
+}
+
+.nav-font {
+  font-family: ARS Maquette,Helvetica Neue,Arial,sans-serif;
+  font-size: 0.8125rem;
+}
+
+.white {
+  color: #fff;
 }
