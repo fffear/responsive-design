@@ -10,26 +10,67 @@
   </head>
   <body>
     <header>
-      <nav>
-        <div class="header-bg-1 flex-container space-between nav-font fs-1">
-          <ul class="grid-container auto-col ggh padding-1">
-            <li><span><a href="#" class="white">News</a></span></li>
-            <li><span><a href="#" class="light-grey">Events</a></span></li>
-            <li><span><a href="#" class="light-grey">Business</a></span></li>
-            <li><span><a href="#" class="light-grey">AMAs</a></span></li>
-            <li><span><a href="#" class="light-grey">Space</a></span></li>
-            <li><span><a href="#" class="light-grey">Terms & Conditions</a></span></li>
-          </ul>
+      <nav class="top-header-nav">
+        <ul>
+          <li><span><a href="#">News</a></span></li>
+          <li><span><a href="#">Events</a></span></li>
+          <li><span><a href="#">Business</a></span></li>
+          <li><span><a href="#">AMAs</a></span></li>
+          <li><span><a href="#">Space</a></span></li>
+          <li><span><a href="#">Terms & Conditions</a></span></li>
+        </ul>
 
-          <ul class="grid-container auto-col ggh padding-1">
-            <li><a href="#" class="light-grey">About</a></li>
-            <li><a href="#" class="light-grey">Team</a></li>
-            <li><a href="#" class="light-grey">Advertise</a></li>
-            <li><a href="#" class="light-grey">Jobs</a></li>
-            <li><a href="#" class="light-grey">Contact</a></li>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Advertise</a></li>
+          <li><a href="#">Jobs</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul> 
+      </nav>
+
+      <nav class="bottom-header-nav">
+        <div class="left-nav-btns">
+          <div class="nav-logo">
+              <img src="assets/images/tnw.svg" alt="TNW">
+          </div>
+
+          <ul class="sections">
+            <li><span><a href="#">Latest</a></span></li>
+            <li><span><a href="#">Hard Fork</a></span></li>
+            <li><span><a href="#">Plugged</a></span></li>
+            <li><span><a href="#">Fundamentals</a></span></li>
+            <li><span><a href="#">Work 2030</a></span></li>
           </ul>
         </div>
 
+
+        <div class="right-nav-btns">
+          <a class="search-icon" href="#">
+            <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+              <g>
+               <title></title>
+               <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+              </g>
+              <g>
+               <title>Layer 1</title>
+               <path id="svg_1" fill="#AAA" d="m497.912994,497.912994c-18.782013,18.782013 -49.225006,18.782013 -68.007996,0l-84.862,-84.863007c-34.889008,22.382019 -76.130005,35.71701 -120.658997,35.71701c-123.915001,0 -224.384003,-100.454987 -224.384003,-224.384003s100.469002,-224.382996 224.384003,-224.382996c123.931,0 224.384003,100.452003 224.384003,224.382996c0,44.514008 -13.35199,85.770996 -35.717987,120.675995l84.863007,84.863007c18.781982,18.782013 18.781982,49.209015 -0.000031,67.990997zm-273.528992,-433.803993c-88.511002,0 -160.274002,71.747002 -160.274002,160.273003c0,88.525986 71.763992,160.274002 160.274002,160.274002c88.524994,0 160.27301,-71.748016 160.27301,-160.274002c0,-88.526001 -71.748016,-160.273003 -160.27301,-160.273003z"/>
+              </g>
+            </svg>
+          </a>
+
+          <a class="hamburger-icon" href="#">
+            <?xml version="1.0" ?>
+              <!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+              <svg id="Layer_1" style="enable-background:new 0 0 64 64;" version="1.1" viewBox="0 0 64 64" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <style type="text/css">
+              .st0{fill:#ff4422;}
+            </style><g><g id="Navicon" transform="translate(330.000000, 232.000000)"><polygon class="st0" id="Fill-19" points="-321.8,-219 -274.3,-219 -274.3,-212.7 -321.8,-212.7    "/><polygon class="st0" id="Fill-20" points="-321.8,-203.2 -274.3,-203.2 -274.3,-196.8 -321.8,-196.8    "/><polygon class="st0" id="Fill-21" points="-321.8,-187.3 -274.3,-187.3 -274.3,-181 -321.8,-181    "/></g></g></svg>
+          </a>
+        </div>
+      </nav>
+  
+        <!--
         <div class="header-bg-2 flex-container space-between">
           <ul class="grid-container auto-col uppercase font-2 fs-2">
             <li><a href="#" class="grey padding-4 i-block">Latest</a></li>
@@ -42,22 +83,33 @@
           <div>
             <span class="grid-container auto-col ggh bd-grey-left">
               <a class="i-block" href="#">
-                  <svg class="icon search padding-2" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-                    <g>
-                     <title></title>
-                     <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
-                    </g>
-                    <g>
-                     <title>Layer 1</title>
-                     <path id="svg_1" fill="#AAA" d="m497.912994,497.912994c-18.782013,18.782013 -49.225006,18.782013 -68.007996,0l-84.862,-84.863007c-34.889008,22.382019 -76.130005,35.71701 -120.658997,35.71701c-123.915001,0 -224.384003,-100.454987 -224.384003,-224.384003s100.469002,-224.382996 224.384003,-224.382996c123.931,0 224.384003,100.452003 224.384003,224.382996c0,44.514008 -13.35199,85.770996 -35.717987,120.675995l84.863007,84.863007c18.781982,18.782013 18.781982,49.209015 -0.000031,67.990997zm-273.528992,-433.803993c-88.511002,0 -160.274002,71.747002 -160.274002,160.273003c0,88.525986 71.763992,160.274002 160.274002,160.274002c88.524994,0 160.27301,-71.748016 160.27301,-160.274002c0,-88.526001 -71.748016,-160.273003 -160.27301,-160.273003z"/>
-                    </g>
-                  </svg>
-                <!-- <img class="icon" src="assets/images/search_icon.svg" alt="search icon"> -->
+                <svg class="icon search padding-2" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                  <g>
+                   <title></title>
+                   <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+                  </g>
+                  <g>
+                   <title>Layer 1</title>
+                   <path id="svg_1" fill="#AAA" d="m497.912994,497.912994c-18.782013,18.782013 -49.225006,18.782013 -68.007996,0l-84.862,-84.863007c-34.889008,22.382019 -76.130005,35.71701 -120.658997,35.71701c-123.915001,0 -224.384003,-100.454987 -224.384003,-224.384003s100.469002,-224.382996 224.384003,-224.382996c123.931,0 224.384003,100.452003 224.384003,224.382996c0,44.514008 -13.35199,85.770996 -35.717987,120.675995l84.863007,84.863007c18.781982,18.782013 18.781982,49.209015 -0.000031,67.990997zm-273.528992,-433.803993c-88.511002,0 -160.274002,71.747002 -160.274002,160.273003c0,88.525986 71.763992,160.274002 160.274002,160.274002c88.524994,0 160.27301,-71.748016 160.27301,-160.274002c0,-88.526001 -71.748016,-160.273003 -160.27301,-160.273003z"/>
+                  </g>
+                </svg>
               </a>
             </span>
           </div>
         </div>
-      </nav>
+        -->
     </header>
+
+    <!--
+      <main>
+        <div class="padding-5 bg-red">
+          <div class="grid-container major-articles gg-1">
+            <div class="major-article-1 bd-black airpods-img">Test1</div>
+            <div class="bd-black major-article-2">Test2</div>
+            <div class="bd-black major-article-2">Test3</div>
+          </div>
+        </div>
+      </main>
+    -->
   </body>
 </html>
