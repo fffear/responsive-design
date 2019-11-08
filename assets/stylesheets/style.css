@@ -161,6 +161,16 @@ a {
   margin-left: 10px;
 }
 
+.sections-heading {
+  font-size: 28px;
+  font-family: Avalon, sans-serif;
+  color: #ff4422;
+}
+
+.sections-heading:hover {
+  color: #000;
+}
+
 .bottom-header-nav ul:first-child {
   display: grid;
   grid-auto-flow: column;
@@ -334,11 +344,11 @@ main {
   align-self: center;
 }
 
-.author {
+.cover-article-details .author {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.author:hover {
+.cover-article-details .author:hover {
   color: white;
 }
 
@@ -410,14 +420,13 @@ main {
 }
 
 .deals-articles-container-middle-col {
-  background: blue;
+  background: ;
 }
 
 /* Latest News */
 .latest-news {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  background: red;
 }
 
 .latest-news-heading {
@@ -426,8 +435,48 @@ main {
 
 .latest-news-item {
   box-sizing: border-box;
-  padding: 12px;
-  background: chartreuse;
+  padding: 10px;
+  background: ;
+  font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
+}
+
+.latest-news-image {
+  display: block;
+  height: auto;
+  margin-bottom: 10px;
+  max-height: 135px;
+  width: 100%;
+}
+
+.latest-news-image img {
+  height: auto;
+  max-height: 135px;
+  width: 100%;
+}
+
+.latest-news-item h3 a {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 700;
+  color: #000;
+}
+
+.latest-news-info {
+
+}
+
+.latest-news-item .author {
+  font-size: 13px;
+  color: #AAAAAA;
+}
+
+.latest-news-item .author:hover {
+  color: #555;
+}
+
+.latest-news-item time {
+  font-size: 13px;
+  color: #AAAAAA;
 }
 
 .latest-news-header {
@@ -698,7 +747,7 @@ main {
   
   .latest-news-item {
     box-sizing: border-box;
-    padding: 12px;
+    padding: 10px;
     background: chartreuse;
   }
 
@@ -779,13 +828,40 @@ main {
     display: grid;
     grid-template-columns: 1fr;
     background: red;
-  
   }
   
   .latest-news-item {
     box-sizing: border-box;
     padding: 12px;
-    background: chartreuse;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: start;
+    grid-gap: 10px;
+  }
+
+  .latest-news-image {
+    margin-bottom: 0;
+    height: 75px;
+    width: 75px;
+  }
+
+
+  .latest-news-item h3 a {
+    font-size: 14px;
+  }
+
+  .latest-news-item .author {
+    font-size: 12px;
+  }
+
+  .latest-news-item time {
+    font-size: 12px;
+  }
+
+  
+  .latest-news-item img {
+    height: 100%;
+    width: 100%;
   }
 
   /* Funding Rounds */
