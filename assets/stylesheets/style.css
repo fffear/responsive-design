@@ -8,6 +8,12 @@ body {
   background-color: rgb(230, 230, 230);
 }
 
+.clearfix::after {
+  display: block;
+  content: "";
+  float: both;
+}
+
 /* ======================================
  
     Inline Block
@@ -165,6 +171,7 @@ a {
   font-size: 28px;
   font-family: Avalon, sans-serif;
   color: #ff4422;
+  font-weight: 700;
 }
 
 .sections-heading:hover {
@@ -419,9 +426,9 @@ main {
   background: blueviolet;
 }
 
-.deals-articles-container-middle-col {
+/* .deals-articles-container-middle-col {
   background: ;
-}
+} */
 
 /* Latest News */
 .latest-news {
@@ -429,7 +436,7 @@ main {
   grid-template-columns: repeat(4, 1fr);
 }
 
-.latest-news-heading {
+.segment-heading {
   grid-column: 1 / -1;
 }
 
@@ -489,17 +496,117 @@ main {
 .funding-rounds {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  background: red;
 }
 
-.funding-rounds-heading {
-  grid-column: 1 / -1;
+.funding-rounds .segment-heading {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.funding-rounds-nav ul {
+  display: grid;
+  grid-auto-flow: column;
+  color: #ff4422;
+  font-size: 16px;
+  font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
+}
+
+.funding-rounds-nav a {
+  color: #ff4422;
+}
+
+.funding-rounds-nav a:hover {
+  color: #000;
 }
 
 .funding-rounds-item {
   box-sizing: border-box;
   padding: 12px;
-  background: chartreuse;
+}
+
+.funding-rounds-item h3 {
+  font-size: 18px;
+  font-family: Avalon, sans-serif;
+  font-weight: 700;
+}
+
+.investment-card {
+
+}
+
+.investment-card > h3:first-of-type {
+  background: #ff4422;
+  padding: 10px;
+}
+
+.investment-card > img {
+  height: 60px;
+  width: 60px;
+  margin: 10px;
+  float: left;
+}
+
+.investment-card-details {
+  background-color: rgba(255, 68, 34, 0.08);
+  padding: 10px;
+}
+
+.investment-card-details h4 {
+  font-size: 12px;
+  font-family: Shentox, sans-serif;
+  color: #555;
+  line-height: 18px;
+  margin-bottom: 5px;
+}
+
+.investment-info {
+  background: rgba(255, 68, 34, 0.03);
+  font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
+}
+
+.investment-tag {
+  padding: 16px;
+  font-size: 13px;
+  border-bottom: 1px rgba(255, 68, 34, 0.25) solid;
+}
+
+.investment-tag img {
+  height: 16px;
+  width: 16px;
+}
+
+.investment-tag a {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: start;
+  align-items: center;
+  grid-column-gap: 5px; 
+  color: #555;
+}
+
+.investment-tag a:hover {
+  color: #000;
+}
+
+.investment-tag li {
+  margin-bottom: 6.5px;
+}
+
+.investment-story {
+  padding: 16px;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.investment-story a {
+  color: #555;
+}
+
+.investment-story-source {
+  font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
+  color: #AAA;
 }
 
 .one {
@@ -700,9 +807,9 @@ main {
     background: blueviolet;
   }
 
-  .deals-articles-container-middle-col {
+  /* .deals-articles-container-middle-col {
     background: blue;
-  }
+  } */
 }
 
 @media only screen and (max-width: 1024px) {
@@ -740,26 +847,29 @@ main {
 
   .latest-news {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    background: red;
-  
+    grid-template-columns: repeat(3, 1fr); 
   }
   
   .latest-news-item {
     box-sizing: border-box;
     padding: 10px;
-    background: chartreuse;
   }
 
   /* Funding Rounds */
   .funding-rounds {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    background: red;
   }
-  
-  .funding-rounds-heading {
-    grid-column: 1 / -1;
+
+  .funding-rounds .segment-heading {
+    display: grid;
+    grid-auto-flow: row;
+    justify-content: start;
+    align-items: center;
+  }
+
+  .funding-rounds-nav ul {
+    justify-content: start;
   }
 
   .funding-rounds > div:last-child {
@@ -769,7 +879,6 @@ main {
   .funding-rounds-item {
     box-sizing: border-box;
     padding: 12px;
-    background: chartreuse;
   }
 
   .one {
@@ -827,7 +936,6 @@ main {
   .latest-news {
     display: grid;
     grid-template-columns: 1fr;
-    background: red;
   }
   
   .latest-news-item {
@@ -868,11 +976,20 @@ main {
   .funding-rounds {
     display: grid;
     grid-template-columns: 1fr;
-    background: red;
   }
   
-  .funding-rounds-heading {
-    grid-column: 1 / -1;
+  .funding-rounds-nav ul {
+    display: grid;
+    grid-auto-flow: row;
+  }
+
+  .funding-rounds-nav li {
+    padding: 14px 0 0;
+    font-size: 14px;
+  }
+
+  .funding-rounds-nav span {
+    display: none;
   }
 
   .funding-rounds > div:last-child {
@@ -882,7 +999,6 @@ main {
   .funding-rounds-item {
     box-sizing: border-box;
     padding: 12px;
-    background: chartreuse;
   }
 
     /* Categories */
