@@ -764,12 +764,65 @@ main {
 
 /* Latest Deals */
 .latest-deals {
+  font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
+  /* display: grid;
+  grid-template-columns: repeat(4, 1fr); */
+}
+
+.latest-deals h2 {
+}
+
+.latest-deals ul {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
 
-.latest-deals h2 {
-  grid-column: 1 / -1;
+.latest-deals-item {
+  max-width: 100%;
+  padding: 12px;
+}
+
+.latest-deals-item a {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+  color: #000;
+}
+
+.latest-deals-item a:hover {
+  color: #ff4422;
+  text-decoration-line: underline;
+  
+}
+
+.latest-deals-item-img {
+  background: url("../images/speed_reading_sale.jpg") left top/cover no-repeat;
+  width: 100%;
+  padding-top: 75%;
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.deal-prices {
+  padding-top: 4px;
+}
+
+.deal-old-price {
+  font-size: 13px;
+  line-height: 16px;
+  color: #AAA;
+  text-decoration-line: line-through;
+}
+
+.deal-new-price {
+  font-size: 16px;
+  color: #555;
+}
+
+.latest-deals-item-img p {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 /* ======================================
@@ -1028,13 +1081,26 @@ main {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .categories-item {
-
+  .latest-deals-item a {
+    font-size: 14px;
+    line-height: 16px;
   }
 
   /* Latest Deals */
-  .latest-deals {
+  .latest-deals ul {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .deal-old-price {
+    font-size: 12px;
+    line-height: 16px;
+    color: #AAA;
+    text-decoration-line: line-through;
+  }
+  
+  .deal-new-price {
+    font-size: 14px;
+    color: #555;
   }
 }
 
@@ -1141,8 +1207,24 @@ main {
     }
 
     /* Latest Deals */
-    .latest-deals {
+    .latest-deals ul {
       grid-template-columns: 1fr;
+    }
+
+    .latest-deals-item {
+      display: grid;
+      grid-auto-flow: column;
+      justify-content: start;
+      grid-column-gap: 10px;
+      padding: 0;
+    }
+
+    .latest-deals-item-img {
+      width: 75px;
+      height: 75px;
+      padding-top: 0;
+      position: relative;
+      margin-bottom: 8px;
     }
 
   .one {
