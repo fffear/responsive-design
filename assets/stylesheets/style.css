@@ -277,6 +277,10 @@ main {
   /* background: #fff; */
 }
 
+.cover-one-img {
+  background: url("../images/laptop.jpeg") 35% top/cover no-repeat;
+}
+
 .page-heading {
   display: grid;
   grid-auto-flow: column;
@@ -426,10 +430,6 @@ main {
   background: blueviolet;
 }
 
-/* .deals-articles-container-middle-col {
-  background: ;
-} */
-
 /* Latest News */
 .latest-news {
   display: grid;
@@ -466,10 +466,6 @@ main {
   font-size: 16px;
   font-weight: 700;
   color: #000;
-}
-
-.latest-news-info {
-
 }
 
 .latest-news-item .author {
@@ -530,10 +526,6 @@ main {
   font-size: 18px;
   font-family: Avalon, sans-serif;
   font-weight: 700;
-}
-
-.investment-card {
-
 }
 
 .investment-card > h3:first-of-type {
@@ -621,11 +613,153 @@ main {
 .categories {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-gap: 24px;
   margin-top: 1rem;
+
 }
 
 .categories-item {
-  
+  max-width: 100%;
+}
+
+.most-popular-article {
+  display: grid;
+  max-width: 100%;
+  grid-template-columns: 1fr;
+}
+
+.most-popular-position {
+  grid-area: 1 / 1 / -1 / -1;
+}
+
+.most-popular-position-details {
+  display: grid;
+  align-content: end;
+  padding: 14px;
+}
+
+.most-popular-position-details h3 {
+  font-size: 13px;
+  font-family: Shentox, sans-serif;
+  font-weight: 500;
+  line-height: 19.5px;
+  color: #fff;
+  text-transform: uppercase;
+  z-index: 1;
+}
+
+.most-popular-position-details > a {
+  font-size: 20px;
+  font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 600;
+  line-height: 22px;
+  color: #fff;
+  z-index: 1;
+}
+
+.most-popular-position-details > a:hover {
+  text-decoration-line: underline;
+}
+
+.most-popular-position-details ul {
+  z-index: 1;
+}
+
+.most-popular-position-details li {
+  float: left;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 12px;
+  font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.most-popular-position-details li a {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.most-popular-position-details li a:hover {
+  color: rgb(255, 255, 255);
+}
+
+.most-popular-position-details li:nth-of-type(2) {
+  list-style-type: disc;
+  margin-left: 15px;
+}
+
+.most-popular-image {
+  width: 100%;
+  padding-top: 74.47%;
+  background: url("../images/laptop.jpeg") 35% top/cover no-repeat;
+}
+
+.categories-item .latest {
+  background: rgba(255, 68, 34, 0.03);
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+.categories-item .latest-info {
+  padding: 10px 14px 0;
+}
+
+.categories-item .latest h3 {
+  font-size: 13px;
+  font-family: Shentox, sans-serif;
+  text-transform: uppercase;
+  color: #ff4422;
+  line-height: 19.5px;
+}
+
+.categories-item .latest a:nth-of-type(1) {
+  font-size: 14px;
+  font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 600;
+  color: #ff4422;
+  line-height: 17.5px;
+}
+
+.categories-item .latest .crop {
+  height: 96px;
+  width: 96px;
+  margin-top: 1px;
+  overflow: hidden;
+}
+
+.categories-item .latest img {
+  height: 96px;
+  width: 170px;
+  margin: 0 0 0 -40px;
+}
+
+.categories-item .other-links li {
+  font-size: 13px;
+  font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
+  padding: 6px 0 6px 14px;
+  border-bottom: 1px rgb(211, 211, 211) solid;
+}
+
+.categories-item .other-links li::before {
+  content: "\2022";
+  display: inline-block;
+  font-weight: bold;
+  color: #ff4422;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.categories-item .other-links a {
+  color: #555555;
+}
+
+.categories-item .other-links a:hover {
+  color: #000;
+}
+
+.category-article-image img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
 /* Latest Deals */
