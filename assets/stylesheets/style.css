@@ -4,80 +4,10 @@
   --light-grey: rgba(255, 255, 255, 0.6);
 }
 
-body {
-  background-color: rgb(230, 230, 230);
-}
-
 .clearfix::after {
   display: block;
   content: "";
   float: both;
-}
-
-/* ======================================
- 
-    Inline Block
- 
-========================================= */
-
-.i-block {
-  display: inline-block;
-}
-
-/* ======================================
- 
-    Flex Container
- 
-========================================= */
-
-.flex-container {
-  display: flex;
-}
-
-.space-between {
-  justify-content: space-between;
-}
-
-/* ======================================
- 
-    Grid Container
- 
-========================================= */
-
-.grid-container {
-  display: grid;
-}
-
-.grid-center {
-  justify-items: center;
-}
-
-.auto-col {
-  grid-auto-flow: column;
-}
-
-.ggh {
-  grid-column-gap: 0.8125rem;
-}
-
-.gg-1 {
-  grid-gap: 0.5rem;
-}
-
-.bd-grey-left {
-  border-left: 1px #AAA solid;
-}
-
-.bd-red {
-  border: 1px red solid;
-} 
-
-.bd-black {
-  border: 1px #000 solid;
-}
-
-.bg-red {
-  background: red;
 }
 
 /* ======================================
@@ -436,10 +366,6 @@ main {
   grid-template-columns: minmax(20px, auto) 1160px minmax(20px, auto);
 }
 
-.deals-articles-container-side-col {
-  background: blueviolet;
-}
-
 /* Latest News */
 .latest-news {
   display: grid;
@@ -505,12 +431,6 @@ main {
 .latest-news-item time {
   font-size: 13px;
   color: #AAAAAA;
-}
-
-.latest-news-header {
-  margin: 0 auto;
-  width: 90%;
-  border: 1px red solid;
 }
 
 /* Funding Rounds */
@@ -637,14 +557,6 @@ main {
 .investment-story-source {
   font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
   color: #AAA;
-}
-
-.one {
-  background-color: #f42;
-}
-
-.two {
-  background-color: #c09;
 }
 
 /* Categories */
@@ -1127,14 +1039,6 @@ main {
     display: grid;
     grid-template-columns: 20px 1fr 20px;
   }
-
-  .deals-articles-container-side-col {
-    background: blueviolet;
-  }
-
-  /* .deals-articles-container-middle-col {
-    background: blue;
-  } */
 }
 
 @media only screen and (max-width: 1024px) {
@@ -1203,14 +1107,6 @@ main {
   .funding-rounds-item {
     box-sizing: border-box;
     padding: 12px;
-  }
-
-  .one {
-    background-color: #f42;
-  }
-  
-  .two {
-    background-color: #c09;
   }
 
   /* Categories */
@@ -1380,10 +1276,4 @@ main {
   .legal span {
     display: block;
   }
-
-
-  /* body:after {
-      content: "320px to 768px";
-      background-color: hsla(270,60%,40%,0.7);
-  } */
 }
